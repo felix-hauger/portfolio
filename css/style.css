@@ -16,6 +16,7 @@ h1, h2, h3 {
 
 img {
   max-height: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -66,6 +67,10 @@ a {
   font-weight: 600;
   text-shadow: 1px 1px 0 black;
 }
+
+.work h3 {
+  padding-top: 10px;
+}
 .work, .work div {
   width: 280px;
   height: 200px;
@@ -107,9 +112,15 @@ a {
   top: 300px;
   left: 450px;
 }
+
+
 /* Third slide : Plus */
 .slide:nth-child(3) {
-  background: blue;
+  background: url("../img/bg-pg3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 
@@ -150,16 +161,8 @@ a {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
 
-/* The dots/bullets/indicators */
+/* The Nav for moving between slides */
 .remote {
   display: flex;
   position: absolute;
@@ -204,4 +207,35 @@ a {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media all and (max-width: 1024px) {
+  .work p {
+    display: none;
+  }
+  .work div {
+    width: 100%;
+    height: 100%;
+  }
+  .work h3, .work .subtitle {
+    display: block;
+    font-size: 3rem;
+    padding-top: 35%;
+  }
+  .work {
+    width: 37%;
+    height: 30%;
+  }
+  .work:first-child {
+    top: 5%;
+  }
+  .work:nth-child(2) {
+    top: 45%;
+  }
+  .work:nth-child(3) {
+    top: 5%;
+  }
+  .work:nth-child(4) {
+    top: 45%;
+  }
 }
