@@ -1,11 +1,7 @@
-h1 {
-  padding: 0;
-  margin: 0;
-}
-
 html, body {
   height: 100%;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -13,8 +9,18 @@ body {
   font-family: Frutiger, Helvetica;
 }
 
+h1, h2, h3 {
+  padding: 0;
+  margin: 0;
+}
+
 img {
   max-height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Slideshow container */
@@ -53,32 +59,53 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
-
+.work p, .work h3 {
+  padding: 0 5px;
+  text-align: center;
+  color: #ddd;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 black;
+}
 .work, .work div {
   width: 280px;
   height: 200px;
 }
+.work, .work * {
+  cursor: pointer;
+}
 .work {
-  border: 1px solid #000;
+  border: 1px solid #444;
+  border-radius: 3px;
   background-size: cover;
   background-repeat: no-repeat;
   opacity: .85;
+  position: absolute;
 }
 .work div:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: background-color .7s;
+}
+.work div {
   background-color: rgba(0, 0, 0, 0.6);
   transition: background-color .7s;
 }
 .work:first-child {
   background-image: url("../img/project-simplonstrap.png");
+  top: 50px;
+  left: 50px;
 }
 .work:nth-child(2) {
   background-image: url("../img/poster-copy.jpg");
+  top: 300px;
+  left: 50px;
 }
 .work:nth-child(3) {
-
+  top: 50px;
+  left: 450px;
 }
 .work:nth-child(4) {
-
+  top: 300px;
+  left: 450px;
 }
 /* Third slide : Plus */
 .slide:nth-child(3) {
