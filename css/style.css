@@ -90,6 +90,16 @@ __ __ _____ _ _| |__ ___
 .work, .work * {
   cursor: pointer;
 }
+
+.work blockquote {
+  color: #ddd;
+  text-align: center;
+  font-weight: 600;
+  text-shadow: 1px 1px 0 black;
+  font-size: 10px;;
+
+}
+
 .work {
   border: 1px solid #444;
   border-radius: 3px;
