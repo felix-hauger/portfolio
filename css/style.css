@@ -36,7 +36,7 @@ a {
 }
 /* First slide : Prez */
 .slide:first-child {
-  background-image: url("../img/bg-pc.jpg");
+  background-image: url("../img/backgrounds/bg-pc.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -53,7 +53,7 @@ a {
   padding: 6px 0;
 }
 
-/*_       
+/*_
 __ __ _____ _ _| |__ ___
 \ V  V / _ \ '_| / /(_-<
 \_/\_/\___/_| |_\_\/__/
@@ -62,7 +62,7 @@ __ __ _____ _ _| |__ ___
 
 /* Second slide : Projects */
 .slide:nth-child(2) {
-  background-image: url("../img/bg-pg2.jpeg");
+  background-image: url("../img/backgrounds/bg-pg2.jpeg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -125,6 +125,7 @@ __ __ _____ _ _| |__ ___
   left: 50px;
 }
 .work:nth-child(3) {
+  background-image: url("../img/works/medinscop_simulator.png");
   left: 450px;
 }
 .work:nth-child(4) {
@@ -143,7 +144,7 @@ __ __ _____ _ _| |__ ___
 
 /* Third slide : Plus */
 .slide:nth-child(3) {
-  background: url("../img/bg-pg3.jpg");
+  background: url("../img/backgrounds/bg-pg3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -249,37 +250,6 @@ __ __ _____ _ _| |__ ___
   to {opacity: 1}
 }
 
-@media all and (max-width: 1024px) {
-  .work p {
-    display: none;
-  }
-  .work div {
-    width: 100%;
-    height: 100%;
-  }
-  .work h2, .work .subtitle {
-    display: block;
-    font-size: 3rem;
-    padding-top: 35%;
-  }
-  .work {
-    width: 37%;
-    height: 30%;
-  }
-  .work:first-child {
-    top: 5%;
-  }
-  .work:nth-child(2) {
-    top: 45%;
-  }
-  .work:nth-child(3) {
-    top: 5%;
-  }
-  .work:nth-child(4) {
-    top: 45%;
-  }
-}
-
 /* ___ _  _____ _    _    ___
 / __| |/ /_ _| |  | |  / __|
 \__ \ ' < | || |__| |__\__ \
@@ -352,4 +322,41 @@ __ __ _____ _ _| |__ ___
   width: 18%;
   top: 60%;
   left: 54%;
+}
+/*_ _                          _
+_ __  ___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
+| '  \/ -_) _` | / _` | / _` | || / -_) '_| / -_|_-<
+|_|_|_\___\__,_|_\__,_| \__, |\_,_\___|_| |_\___/__/
+                          |_|
+*/
+
+@media all and (max-width: 1024px) {
+  .work p {
+    display: none;
+  }
+  .work div {
+    width: 100%;
+    height: 100%;
+  }
+  .work h2, .work .subtitle {
+    display: block;
+    font-size: 3rem;
+    padding-top: 35%;
+  }
+  .work {
+    width: 37%;
+    height: 30%;
+  }
+  .work:first-child {
+    top: 5%;
+  }
+  .work:nth-child(2) {
+    top: 45%;
+  }
+  .work:nth-child(3) {
+    top: 5%;
+  }
+  .work:nth-child(4) {
+    top: 45%;
+  }
 }
