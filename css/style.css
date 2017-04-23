@@ -42,7 +42,7 @@ a {
   background-repeat: no-repeat;
 }
 
-.prez {
+.prez { /* faire sortir du flux pour mettre une marge */
   box-sizing: border-box;
   margin-left: auto;
   margin-right: auto;
@@ -60,7 +60,12 @@ a {
   background-position: center;
   background-repeat: no-repeat;
 }
-.work p, .work h3 {
+
+.works {
+  position: relative;
+}
+
+.work p, .work h2 {
   padding: 0 5px;
   text-align: center;
   color: #ddd;
@@ -68,7 +73,7 @@ a {
   text-shadow: 1px 1px 0 black;
 }
 
-.work h3 {
+.work h2 {
   padding-top: 10px;
 }
 .work, .work div {
@@ -84,6 +89,8 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   opacity: .85;
+  /*margin-top: 95px;*/
+  margin-left: 80px;
   position: absolute;
 }
 .work div:hover {
@@ -230,7 +237,7 @@ a {
     width: 100%;
     height: 100%;
   }
-  .work h3, .work .subtitle {
+  .work h2, .work .subtitle {
     display: block;
     font-size: 3rem;
     padding-top: 35%;
@@ -251,4 +258,78 @@ a {
   .work:nth-child(4) {
     top: 45%;
   }
+}
+
+/* ___ _  _____ _    _    ___
+/ __| |/ /_ _| |  | |  / __|
+\__ \ ' < | || |__| |__\__ \
+|___/_|\_\___|____|____|___/
+*/
+
+#Skills {
+   font-size: 20px;
+   height: auto;
+   margin: 0;
+   padding: 10px;
+   width: 35%;
+   position: relative;
+}
+
+#Skills h2 {
+  text-align: center;
+  margin-top: 12px;
+  font-style: italic;
+}
+
+.skill-cloud {
+  height: 250px;
+  width: 350px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .75);
+  position: absolute;
+}
+#Skills img {
+   width: 60px;
+   /*height: 10%;*/
+   /*margin: auto 35%;*/
+   margin: 0;
+   padding: 10px;
+   position: absolute;
+}
+
+#Skills img#html5-logo {
+  width: 15%;
+  top: 19%;
+  left: 16%;
+}
+
+#Skills img#css3-logo {
+  width: 14%;
+  top: 24%;
+  left: 38%;
+}
+
+#Skills img#javascript-logo {
+  width: 16%;
+  top: 44%;
+  left: 10%;
+}
+
+#Skills img#jquery-logo {
+  width: 15%;
+  top: 56%;
+  left: 31%;
+}
+
+#Skills img#php-logo {
+  width: 17%;
+  top: 22%;
+  left: 66%;
+}
+#Skills img#mysql-logo {
+  width: 18%;
+  top: 60%;
+  left: 54%;
 }
