@@ -144,6 +144,7 @@ __ __ _____ _ _| |__ ___
 }
 
 .work:nth-child(5) {
+  background-image: url("../img/works/aquabellum_project.jpg");
   left: 850px;
 }
 .work:nth-child(6) {
