@@ -373,4 +373,10 @@ _ __  ___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
   .work:nth-child(4) {
     top: 45%;
   }
+  .work:nth-child(5) {
+    top: 5%;
+  }
+  .work:nth-child(6) {
+    top: 45%;
+  }
 }
