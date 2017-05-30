@@ -125,7 +125,6 @@ __ __ _____ _ _| |__ ___
 .work:nth-child(2n+1) {
   margin-top: 50px;
 }
-
 .work:first-child {
   background-image: url("../img/works/simplonstrap.jpg");
   left: 50px;
@@ -142,15 +141,14 @@ __ __ _____ _ _| |__ ___
   background-image: url("../img/works/aeroweb_challenge.jpg");
   left: 450px;
 }
-
 .work:nth-child(5) {
   background-image: url("../img/works/aquabellum_project.jpg");
   left: 850px;
 }
 .work:nth-child(6) {
+  background-image: url("../img/works/lesemplettes.jpg");
   left: 850px;
 }
-
 
 
 /* Third slide : Plus */
@@ -284,7 +282,7 @@ __ __ _____ _ _| |__ ___
 
 .skill-cloud {
   height: 250px;
-  width: 350px;
+  width: 450px;
   margin-top: 50px;
   margin-left: 50px;
   border-radius: 50%;
@@ -331,8 +329,13 @@ __ __ _____ _ _| |__ ___
 }
 #Skills img#mysql-logo {
   width: 18%;
-  top: 60%;
+  top: 65%;
   left: 54%;
+}
+#Skills img#git-logo {
+  width: 18%;
+  top: 50%;
+  left: 64%;
 }
 /*_ _                          _
 _ __  ___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
