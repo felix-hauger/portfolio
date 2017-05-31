@@ -163,8 +163,8 @@ __ __ _____ _ _| |__ ___
 .contact {
   background-color: rgba(255, 255, 255, .6);
   position: absolute;
-  right: 50px;
-  top: 50px;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   padding: 15px;
   border-radius: 3px;
@@ -283,12 +283,28 @@ __ __ _____ _ _| |__ ___
 .skill-cloud {
   height: 250px;
   width: 450px;
-  margin-top: 50px;
-  margin-left: 50px;
+  top: 100px;
+  margin-left: 90%;
+  margin-bottom: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, .75);
   position: absolute;
+  /*top: 50%; left: 50%;
+  transform: translate(-50%, -50%); */
+  animation-name: skill-slide;
+  animation-duration: 2s;
 }
+
+@keyframes skill-slide {
+  from {
+      margin-left: -1000px;
+    }
+
+    to {
+      margin-left: 90%;
+    }
+}
+
 #Skills img {
    width: 60px;
    /*height: 10%;*/
@@ -378,5 +394,36 @@ _ __  ___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
   }
   .work:nth-child(6) {
     top: 45%;
+  }
+}
+
+@media all and (max-height: 640px) {
+  #Skills {
+    top: -60px;
+  }
+
+  .work {
+    margin-left: 30px;
+  }
+
+  .work:nth-child(2),
+  .work:nth-child(2) *,
+  .work:nth-child(4),
+  .work:nth-child(4) * {
+    display: none;
+  }
+
+  .work:first-child {
+    left: 20px;
+  }
+  .work:nth-child(3) {
+    left: 320px;
+  }
+  .work:nth-child(5) {
+    left: 620px;
+  }
+  .work:nth-child(6) {
+    left: 920px;
+    margin-top: 50px;
   }
 }
