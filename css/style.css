@@ -125,29 +125,42 @@ __ __ _____ _ _| |__ ___
 .work:nth-child(2n+1) {
   margin-top: 50px;
 }
-.work:first-child {
+
+.work:nth-child(1),
+.work:nth-child(2)
+{
+  left: 50px;
+}
+
+.work:nth-child(3),
+.work:nth-child(4)
+{
+  left: 450px;
+}
+
+.work:nth-child(5),
+.work:nth-child(6)
+{
+  left: 850px;
+}
+
+.work#SimplonStrap {
   background-image: url("../img/works/simplonstrap.jpg");
-  left: 50px;
 }
-.work:nth-child(2) {
+.work#Movie_Poster {
   background-image: url("../img/works/poster-copy.jpg");
-  left: 50px;
 }
-.work:nth-child(3) {
+.work#Income_Simulator {
   background-image: url("../img/works/medinscop_simulator.png");
-  left: 450px;
 }
-.work:nth-child(4) {
+.work#Aeroweb {
   background-image: url("../img/works/aeroweb_challenge.jpg");
-  left: 450px;
 }
-.work:nth-child(5) {
+.work#AquaBellum {
   background-image: url("../img/works/aquabellum_project.jpg");
-  left: 850px;
 }
-.work:nth-child(6) {
+.work#Les_Emplettes {
   background-image: url("../img/works/lesemplettes.jpg");
-  left: 850px;
 }
 
 
