@@ -420,23 +420,24 @@ _ __  ___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
     margin-left: 30px;
   }
 
-  .work:nth-child(2),
-  .work:nth-child(2) *,
-  .work:nth-child(4),
-  .work:nth-child(4) * {
+  .work:nth-child(5),
+  .work:nth-child(5) *,
+  .work:nth-child(6),
+  .work:nth-child(6) * {
     display: none;
   }
 
   .work:first-child {
     left: 20px;
   }
-  .work:nth-child(3) {
+  .work:nth-child(2) {
     left: 320px;
+    margin-top: 50px;
   }
-  .work:nth-child(5) {
+  .work:nth-child(3) {
     left: 620px;
   }
-  .work:nth-child(6) {
+  .work:nth-child(4) {
     left: 920px;
     margin-top: 50px;
   }
