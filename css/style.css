@@ -159,8 +159,8 @@ __ __ _____ _ _| |__ ___
 .work#AquaBellum {
   background-image: url("../img/works/aquabellum_project.jpg");
 }
-.work#Les_Emplettes {
-  background-image: url("../img/works/lesemplettes.jpg");
+.work#Livre_or {
+  background-image: url("../img/works/livre_or.jpg");
 }
 
 
@@ -374,7 +374,7 @@ _ __  ___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
 */
 
 @media all and (max-width: 1240px) {
-  /*.work p {
+  .work p {
     display: none;
   }
   .work div {
@@ -408,7 +408,7 @@ _ __  ___ __| (_)__ _   __ _ _  _ ___ _ _(_)___ ___
   .work:nth-child(6),
   .work:nth-child(6) * {
     display: none;
-  }*/
+  }
 }
 
 @media all and (max-height: 640px) {
